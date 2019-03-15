@@ -1,6 +1,8 @@
 # docker-node-im-cwebp
 node + webp
 
+Usage: the same as [node](https://hub.docker.com/_/node)
+
 Webp will be installed in `/usr/local/bin`.
 
 ```
