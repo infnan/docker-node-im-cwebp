@@ -13,5 +13,5 @@ RUN gpg --keyserver pool.sks-keyservers.net --recv-keys B8232B5D \
   && ./configure \
   && make \
   && make install \
-  && ldconfig /usr/local/lib
+  && ldconfig /usr/local/lib \
   && rm -rf /tmp/*
