@@ -1,5 +1,5 @@
 # docker-node-im-cwebp
-Used for https://github.com/infnan/sticker2pic-bot
+node + webp
 
 Webp will be installed in `/usr/local/bin`.
 
