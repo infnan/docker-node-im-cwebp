@@ -7,7 +7,7 @@ RUN gpg --keyserver pool.sks-keyservers.net --recv-keys B8232B5D \
   && cd /tmp \
   && curl -SLO "${CWEBP_URL}/libwebp-${CWEBP_VERSION}.tar.gz" \
   && curl -SLO "${CWEBP_URL}/libwebp-${CWEBP_VERSION}.tar.gz.asc" \
-  && gpg --verify "libwebp-${CWEBP_VERSION}.tar.gz.asc" "libwebp-${CWEBP_VERSION}.tar.xz" \
+  && gpg --verify "libwebp-${CWEBP_VERSION}.tar.gz.asc" "libwebp-${CWEBP_VERSION}.tar.gz" \
   && tar -xf "libwebp-${CWEBP_VERSION}.tar.gz" \
   && cd libwebp-${CWEBP_VERSION} \
   && ./configure \
