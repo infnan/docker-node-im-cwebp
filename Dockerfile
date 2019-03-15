@@ -10,7 +10,7 @@ RUN gpg --keyserver pool.sks-keyservers.net --recv-keys B8232B5D \
   && gpg --verify "libwebp-${CWEBP_VERSION}.tar.gz.asc" "libwebp-${CWEBP_VERSION}.tar.xz" \
   && tar -xf "libwebp-${CWEBP_VERSION}.tar.gz" \
   && cd libwebp-${CWEBP_VERSION} \
-  && ./configure
+  && ./configure \
   && make \
   && make install \
   && ldconfig /usr/local/lib
